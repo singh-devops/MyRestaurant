@@ -1,0 +1,14 @@
+<a class="list-group-item">
+    <div class="row">
+        <div class="col-8">
+            <h3>{{reciperec.name}}</h3>
+            <p>{{reciperec.desc}}</p>
+            <h4>{{reciperec.qty}}</h4>
+            <h4>{{reciperec.amount | currency:'INR'}}</h4>
+            <h4>Offer:{{reciperec.offer | percent}}</h4>
+        </div>
+        <div class="col-4">
+            <img src="{{reciperec.imgpath}}" alt="noimage" width="160" height="160"/>
+        </div>
+    </div>
+</a>

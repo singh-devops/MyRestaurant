@@ -1,1 +1,3 @@
-<p>recipelist works!</p>
+<div style="height:550px;overflow-y: scroll;">
+    <app-recipelistitem *ngFor="let recipe of allreceipes" [reciperec]="recipe" (click)="sendrecipe(recipe)"></app-recipelistitem>
+</div>
